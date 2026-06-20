@@ -10,6 +10,7 @@ import Loader from './components/common/Loader'
 import CustomCursor from './components/common/CustomCursor'
 import BackToTop from './components/common/BackToTop'
 import FloatingContact from './components/common/FloatingContact'
+import About from './pages/About'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -44,6 +45,7 @@ function App() {
               <Navbar />
               <Routes>
                 <Route path="/" element={<Home />} />
+                 <Route path="/about" element={<About />} />
               </Routes>
               <Footer />
               <BackToTop />
